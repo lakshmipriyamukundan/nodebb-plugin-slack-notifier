@@ -1,0 +1,11 @@
+{
+  "generator-ts-np": {
+    "promptValues": {
+      "githubUsername": "lakshmipriyamukundan",
+      "email": "lakshmipriya.mukundan@gmail.com",
+      "twitterUsername": "lakshmipriya",
+      "fullName": "Lakshmipriya.mukundan@gmail.com",
+      "packageManager": "yarn"
+    }
+  }
+}
