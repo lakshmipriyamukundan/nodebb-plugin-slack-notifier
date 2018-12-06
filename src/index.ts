@@ -17,7 +17,7 @@ export function savePost(newPost: any) {
     },
     (err, response) => {
       // tslint:disable-next-line
-      console.log(response);
+      //console.log(response);
       if (err) {
         // tslint:disable-next-line
         console.log('********error*********', err);
