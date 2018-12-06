@@ -32,7 +32,9 @@
   "bugs": {
     "url": "https://github.com/lakshmipriyamukundan/nodebb-plugin-slack-notifier/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "slack-node": "^0.1.8"
+  },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/jest": "^23.3.1",
@@ -48,8 +50,8 @@
     "jest": "^23.2.0",
     "prettier": "^1.13.7",
     "run-sequence": "^2.2.1",
+    "ts-node": "^7.0.1",
     "tslint": "^5.10.0",
-    "ts-node":"^7.0.1",
     "typescript": "^3.0.0"
   }
 }
