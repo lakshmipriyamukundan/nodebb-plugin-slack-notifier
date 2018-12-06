@@ -9,6 +9,7 @@ export function savePost(post: any) {
       text: 'This is posted to #general and comes from a bot named webhookbot.',
     },
     (err, response) => {
+      console.log(response);
       if (err) {
         console.log(err);
       }
