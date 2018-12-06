@@ -1,18 +1,29 @@
 import * as Slack from 'slack-node';
+import { webHookUri, channelName } from './slack-settings';
 
-export function savePost(post: any) {
+export function savePost(newPost: any) {
   const slackObj = new Slack();
+
+  const uri = webHookUri;
+  slackObj.setWebhook(uri);
+
+  const post = newPost.post;
+
   slackObj.webhook(
     {
-      channel: '#general',
+      channel: channelName || '#general',
       username: 'webhookbot',
-      text: 'This is posted to #general and comes from a bot named webhookbot.',
+      text: post.content,
     },
     (err, response) => {
+      // tslint:disable-next-line
       console.log(response);
       if (err) {
-        console.log(err);
+        // tslint:disable-next-line
+        console.log('********error*********', err);
       }
     },
   );
 }
+
+// savePost({ post: { content: 'vbvbvb' } });
