@@ -1,5 +1,9 @@
 import * as Slack from 'slack-node';
-import { webHookUri, channelName } from './slack-settings';
+// import { webHookUri, channelName } from './slack-settings';
+
+const nconf = module.parent.require('nconf');
+const webHookUri = nconf.get('slackWebUrl');
+const channelName = nconf.get('channelName');
 
 export function savePost(newPost: any) {
   const slackObj = new Slack();
