@@ -3,6 +3,6 @@
   "name": "Notifier for slack",
   "description": "Slack Notifier",
   "url": "https://github.com/lakshmipriyamukundan/nodebb-plugin-notify-slack",
-  "library": "./library.js",
+  "library": "dist/src/index.js",
   "hooks": [{ "hook": "action:post.save", "method": "savePost" }]
 }

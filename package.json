@@ -9,6 +9,7 @@
   "files": [
     "dist/src/*",
     "package.json",
+    "plugin.json",
     "README.md",
     "LICENSE"
   ],
