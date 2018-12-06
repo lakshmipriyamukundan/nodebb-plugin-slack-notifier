@@ -1,4 +1,4 @@
-# nodebb-plugin-slack-notifier
+# nodebb-plugin-slack-notifier(beta)
 
 Simple nodebb plugin that notify slack about posts
 
