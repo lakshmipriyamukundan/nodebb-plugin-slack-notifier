@@ -64,16 +64,33 @@ export async function savePost(newPost: any) {
     topicPromise,
     catPromise,
   ]);
+  // tslint:disable-next-line
+  // console.log(userResult, topicResult, catResult);
 
   const content = post.content.substring(0, contentLen) + '...';
+
+  const message =
+    '<' +
+    nconf.get('url') +
+    '/topic/' +
+    (topicResult as any).slug +
+    '|[' +
+    (catResult as any).name +
+    ': ' +
+    (topicResult as any).title +
+    ']>\n' +
+    content;
+
+  // tslint:disable-next-line
+  // console.log('message', message);
 
   slackObj.webhook(
     {
       channel: channelName || '#general',
-      username: 'webhookbot',
-      text: content,
+      username: (userResult as any).username,
+      text: message,
     },
-    (err, response) => {
+    (err: any, response: any) => {
       // tslint:disable-next-line
       //console.log(response);
       if (err) {
