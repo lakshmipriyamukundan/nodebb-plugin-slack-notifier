@@ -4,9 +4,9 @@ import { Promise as BluePromise } from 'bluebird';
 // import { webHookUri, channelName } from './slack-settings';
 
 const nconf = module.parent.require('nconf');
-const webHookUri = nconf.get('slackWebUrl');
+const webHookUri = nconf.get('slackWebUrl') || '';
 const channelName = nconf.get('channelName');
-const contentLen = nconf.get('postContentLength');
+const contentLen = nconf.get('postContentLength') || 200;
 
 const user = module.parent.require('./user');
 const topics = module.parent.require('./topics');
