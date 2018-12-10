@@ -1,6 +1,6 @@
 # nodebb-plugin-slack-notifier(beta)
 
-Simple nodebb plugin that notify slack about posts
+Simple nodebb plugin that notify slack about new posts in forum with slack webhook url api.
 
 [![npm](https://img.shields.io/npm/v/nodebb-plugin-slack-notifier.svg)](https://www.npmjs.com/package/nodebb-plugin-slack-notifier)
 [![Travis](https://img.shields.io/travis/lakshmipriyamukundan/nodebb-plugin-slack-notifier.svg)](https://travis-ci.org/lakshmipriyamukundan/nodebb-plugin-slack-notifier)
@@ -28,13 +28,9 @@ yarn add nodebb-plugin-slack-notifier
 
 You don't have to install type definitions for typescript. It's built in.
 
-## How it works
-
-Optional
-
 ## Usage
 
-Describe usage
+Update your 'slackWebUrl', slack 'channelName' and 'postContentLength' in NodeBB config.json file. The plugin will work for you...:)
 
 ## Change log
 
