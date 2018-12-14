@@ -32,6 +32,10 @@ You don't have to install type definitions for typescript. It's built in.
 
 Update your 'slackWebUrl', slack 'channelName' and 'postContentLength' in NodeBB config.json file. The plugin will work for you...:)
 
+## Thanks
+
+https://www.npmjs.com/package/nodebb-plugin-slack-extended
+
 ## Change log
 
 brief change log
